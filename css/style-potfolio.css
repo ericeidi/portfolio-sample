@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+html, body{
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(90deg,#0C1446 80%,#175873 30%);
+}
+
+
+header{
+	display:flex;
+	width: 70%;
+	height: 15vh;
+	margin: auto;
+	align-items: center;
+}
+
+.logo-container,.nav-links{
+	display: flex;
+}
+
+.logo-container a img{
+	width: 50px;
+	height: 50px;
+}
+nav{
+	flex: 1;
+}
+.nav-links{
+	margin-right: 0;
+	justify-content: flex-end;
+	list-style: none;
+}
+.nav-link {
+	margin-inline-end: 80px;
+	color:#919191;
+	text-decoration: none;
+	font-size: 19px;
+}
+
+.nav-link:hover{
+	color:#255784;
+	background: #0C1446;
+}
+
+.container-section{
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	min-height: 80vh;
+}
+
+.proj-links{
+	list-style: none;
+  	float: left;
+  	width: 8%;
+  	height: 150px; 
+	padding: 130px;
+}
+.proj-links ul{
+	list-style: none;
+}
+.proj-links h1{
+	margin-bottom: 30px;
+	color: #fff;
+}
+.proj-links ul li{
+	margin-bottom: 15px;
+}
+
+.app-picure {
+	flex: 1;
+}
+
+.porfolio-picure {
+	flex: 2;
+}
+
+.portfolio-picure img{
+	float: left;
+	margin: 10px 0px 0px 0px;
+	padding: 20px;
+	width: 350px;
+	height: 350px;
+	position: relative;
+	animation: pic-move-right 2s;
+}
+
+.portfolio-picure img:hover{
+	transform: scale(1.1);
+	transition: 1s ease;
+}
+
+
+.portfolio-text{
+	width: 90%;
+	float: right;
+	color: #fff;
+	align-content: center;
+}
+.portfolio-text h1{
+	text-align: center;
+	font-size:43px;
+}
+.portfolio-text p{
+	text-align: center;
+	font-size: 15px;
+	line-height: 25px;
+	color: #919191;
+}
+
+.copyright{
+	font-size: 10px;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	position: relative;
+	float: right;
+}
+
+
+@keyframes pic-move-right{
+	from {left: 80px;}
+	to {left: 0px;}
+}
+
+@media screen and (max-width:1024px){
+
+	.header{
+		width: 90%;
+		height: 100%;
+	}
+	html, body{
+		height: 100%;
+		width: 100%;
+		background: #0C1446;
+	 }
+	 
+	.container-section{
+		flex-direction: column;
+		
+	}
+	.proj-links{
+		list-style: none;
+		  float: left;
+		  width: 8%;
+		  height: 150px; 
+		padding: 130px;
+	}
+}

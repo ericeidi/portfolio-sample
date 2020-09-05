@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+html, body{
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(90deg,#0C1446 80%,#175873 30%);
+}
+
+
+header{
+	display:flex;
+	width: 70%;
+	height: 15vh;
+	margin: auto;
+	align-items: center;
+}
+
+.logo-container,.nav-links{
+	display: flex;
+}
+
+.logo-container a img{
+	width: 50px;
+	height: 50px;
+}
+nav{
+	flex: 1;
+}
+.nav-links{
+	margin-right: 0;
+	justify-content: flex-end;
+	list-style: none;
+}
+.nav-link {
+	margin-inline-end: 80px;
+	color:#919191;
+	text-decoration: none;
+	font-size: 19px;
+}
+
+.nav-link:hover{
+	color:#255784;
+	background: #0C1446;
+}
+
+.scope{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+
+.app-picure {
+	flex: 1;
+}
+
+.app-picure img{
+	height: 60vh;
+	margin: 0px 0px 0px 170px;
+	position: relative;
+  	animation: pic-move 3s;
+}
+
+.app-text{
+	flex:1;
+	width: 90%;
+	float: left;
+	color: #fff;
+}
+.app-text h1{
+	font-size:43px;
+	position: relative;
+}
+.app-text p{
+	font-size: 15px;
+	line-height: 25px;
+	color: #919191;
+}
+
+.social-links{
+	left:0;
+	bottom: 0;
+	position: absolute;
+	background: #87ACA3;
+}
+.social-links nav ul{
+	display: flex;
+	margin: 25px auto;
+	text-align: center;
+}
+.social-links nav ul li{
+	list-style:none;
+	margin: 0 50px;
+	cursor: pointer;
+
+}
+.social-links nav ul li a{
+	color: #221D23;
+	text-decoration: none;
+}
+
+.social-links nav ul li a:hover{
+	color: #fff;
+	background-color: #87ACA3;
+}
+.copyright{
+	font-size: 10px;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	position: relative;
+	float: right;
+}
+
+@keyframes pic-move{
+	from {top: 80px;}
+	to {top: 0px;}
+}
+
+
+@media screen and (max-width:1024px){
+
+	.header{
+		width: 90%;
+		height: 100%;
+	}
+
+	html, body{
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(90deg,#0C1446 80%,#175873 30%);
+	 }
+	.scope{
+		flex-direction: column;
+		
+	}
+	.container-section{
+		flex-direction: column;
+	}
+
+	.description{
+		margin-top: 5vh;
+		
+	}
+	.app-text{
+		align-items: center;
+	}
+	.app-text h1{
+		font-size: 22px;
+		text-align: center;
+	}
+	.app-text p {
+		font-size: 14px;
+		text-align: center;
+	}
+	.app-picure img {
+		width: 300px;
+		height: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		 
+	}
+	.social-links{
+		background: #87ACA3;
+		bottom: 0;
+		position: absolute;
+		width: 100%;
+	}
+	
+}
